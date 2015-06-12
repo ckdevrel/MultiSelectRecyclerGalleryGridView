@@ -39,7 +39,7 @@ public class GalleryAlbumActivity extends AppCompatActivity {
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Album Thumbnails");
+            getSupportActionBar().setTitle("Album Thumbnail Images");
 
         }
 
