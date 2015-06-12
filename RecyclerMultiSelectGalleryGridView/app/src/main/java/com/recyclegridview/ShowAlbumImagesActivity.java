@@ -54,7 +54,7 @@ public class ShowAlbumImagesActivity extends AppCompatActivity implements ShowAl
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Android");
+            getSupportActionBar().setTitle("Album Images");
 
         }
         mPosition = (int)getIntent ().getIntExtra ("position",0);

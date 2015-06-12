@@ -16,12 +16,5 @@
         android:layout_weight="1"
         android:scrollbars="vertical" />
 
-    <Button
-        android:id="@+id/btnShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Show Selected"
-        android:background="#00796B"/>
 
 </LinearLayout>

@@ -26,7 +26,6 @@ public class GalleryAlbumActivity extends AppCompatActivity {
 
 //    private List<Student> studentList;
 
-    private Button btnSelection;
     private ArrayList<AlbumsModel> albumsModels;
 
     @Override
@@ -34,20 +33,13 @@ public class GalleryAlbumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery_albums);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        btnSelection = (Button) findViewById(R.id.btnShow);
+//        btnSelection = (Button) findViewById(R.id.btnShow);
 
-//        studentList = new ArrayList<Student>();
 
-//        for (int i = 1; i <= 15; i++) {
-//            Student st = new Student("Student " + i, "androidstudent" + i
-//                    + "@gmail.com", false);
-//
-//            studentList.add(st);
-//        }
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Android");
+            getSupportActionBar().setTitle("Album Thumbnails");
 
         }
 
@@ -67,36 +59,29 @@ public class GalleryAlbumActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
 
-        btnSelection.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                String data = "";
-                List<AlbumsModel> stList = ((GalleryAlbumAdapter) mAdapter)
-                        .getGalleryImagesList ();
-
-                for (int i = 0; i < stList.size(); i++) {
-                    AlbumsModel singleStudent = stList.get(i);
-                    if (singleStudent.isSelected() == true) {
-
-                        data = data + "\n" + singleStudent.getFolderName ().toString();
-      /*
-       * Toast.makeText( CardViewActivity.this, " " +
-       * singleStudent.getName() + " " +
-       * singleStudent.getEmailId() + " " +
-       * singleStudent.isSelected(),
-       * Toast.LENGTH_SHORT).show();
-       */
-                    }
-
-                }
-
-                Toast.makeText(GalleryAlbumActivity.this,
-                        "Selected Students: \n" + data, Toast.LENGTH_LONG)
-                        .show();
-            }
-        });
+//        btnSelection.setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//
+//                String data = "";
+//                List<AlbumsModel> stList = ((GalleryAlbumAdapter) mAdapter)
+//                        .getGalleryImagesList ();
+//
+//                for (int i = 0; i < stList.size(); i++) {
+//                    AlbumsModel singleStudent = stList.get(i);
+//                    if (singleStudent.isSelected() == true) {
+//
+//                        data = data + "\n" + singleStudent.getFolderName ().toString();
+//                    }
+//
+//                }
+//
+//                Toast.makeText(GalleryAlbumActivity.this,
+//                        "Selected Students: \n" + data, Toast.LENGTH_LONG)
+//                        .show();
+//            }
+//        });
 
         mAdapter.SetOnItemClickListener(new GalleryAlbumAdapter.OnItemClickListener () {
 

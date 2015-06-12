@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Show Selected"
+        android:text="Share"
         android:background="#00796B"/>
 
 </LinearLayout>
