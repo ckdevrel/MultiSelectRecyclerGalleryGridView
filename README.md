@@ -1,4 +1,4 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MultiSelectRecyclerGalleryGridView-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1975)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MultiSelectRecyclerGalleryGridView-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1975)  https://img.shields.io/badge/Appance-MultiSelectRecyclerGalleryGridView-blue.svg
 
 # MultiSelectRecyclerGalleryGridView
 
